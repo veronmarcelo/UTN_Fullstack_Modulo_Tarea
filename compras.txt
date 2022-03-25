@@ -1,0 +1,2 @@
+compras 1
+compras 2
