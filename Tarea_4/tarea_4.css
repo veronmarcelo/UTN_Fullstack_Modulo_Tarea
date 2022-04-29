@@ -1,0 +1,83 @@
+#foto_CV {
+background:200px 200px black ;
+box-shadow: 3px 4px black;
+float: right;
+margin-right: 30px;
+position:relative;
+bottom: 45px;
+
+
+
+}
+.cuerpo{
+    margin-bottom:16cm;
+    margin-left: 40px;
+
+}
+
+
+.hoja{
+    border: solid black 2px;
+    box-shadow: 7px 8px black;
+    background-color: rgba(255, 228, 196, 0.486);
+    height: 850px;
+    width: 700px;
+
+}
+
+h1{
+    text-decoration: underline;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left:25px;
+    
+}
+
+.datospersonales{
+    background-color: bisque;
+    box-shadow: 3px 3px ;
+    border-radius: 6px;
+    height: 150px;
+    width: 350px;
+    padding-left: 25px;
+}
+
+.series{
+    background-color: bisque;
+    box-shadow: 3px 3px ;
+    border-radius: 6px;
+    height: 150px;
+    width: 350px;
+    padding-left: 25px;
+
+}
+
+.peliculas{
+    background-color: bisque;
+    box-shadow: 3px 3px ;
+    border-radius: 6px;
+    height: 150px;
+    width: 350px;
+    padding-left: 25px;
+
+}
+
+.perfil{
+    padding-left: 25px;
+    background-color: bisque;
+    box-shadow: 3px 3px ;
+    border-radius: 6px;
+    height: 150px;
+    width: 350px;
+
+}
+
+footer{
+    margin-top: 50px;
+    text-align: center;
+    background-color: bisque;
+    height: 30px;
+    width: 550px;
+    border: solid 1px ;
+    padding-bottom: 20px;
+    
+}
