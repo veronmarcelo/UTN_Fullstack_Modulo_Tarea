@@ -1,3 +1,6 @@
+body{
+    background: linear-gradient(50deg, black, white);
+}
 #foto_CV {
 background:200px 200px black ;
 box-shadow: 3px 4px black;
@@ -6,31 +9,33 @@ margin-right: 30px;
 position:relative;
 bottom: 45px;
 
-
-
 }
+/* PRUEBA DE FUENTES */
+.cuerpo{
+    font-family: 'Noto Serif', serif;
+    }
 .cuerpo{
     margin-bottom:16cm;
     margin-left: 40px;
-
 }
-
 
 .hoja{
     border: solid black 2px;
     box-shadow: 7px 8px black;
-    background-color: rgba(255, 228, 196, 0.486);
-    height: 850px;
+    background-color: rgb(251, 231, 207);
+    height: 1170px;
     width: 700px;
-
+    display: block;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 h1{
     text-decoration: underline;
     font-family:Arial, Helvetica, sans-serif;
     margin-left:25px;
-    
-}
+  }
 
 .datospersonales{
     background-color: bisque;
@@ -48,7 +53,8 @@ h1{
     height: 150px;
     width: 350px;
     padding-left: 25px;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .peliculas{
@@ -58,7 +64,8 @@ h1{
     height: 150px;
     width: 350px;
     padding-left: 25px;
-
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .perfil{
@@ -67,17 +74,44 @@ h1{
     box-shadow: 3px 3px ;
     border-radius: 6px;
     height: 150px;
-    width: 350px;
-
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 footer{
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 10px;
+    text-align:center;
     background-color: bisque;
-    height: 30px;
+    height: 25px;
     width: 550px;
     border: solid 1px ;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px;  
 }
+
+/*                               ICONOS */
+
+.iconos {
+   padding: auto;
+   margin: 5px;
+   font-size: 30px;
+   margin-top: 10px;
+   margin-bottom: 2px;
+   text-shadow: 1px 1px 2px coral;
+ 
+}
+
+.iconos1 {
+    margin: 1px;
+    font-size: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-shadow: 1px 1px 2px coral;
+
+}
+/* PROBAR LAS PROPIEDADES:
+USAR COLUMNAS (4)
+    column-count: 
+    column-gap:
+
+*/
