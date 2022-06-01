@@ -1,13 +1,281 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UTN-Fullstack - Bootstrap Demostración</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap: Sitio de prueba </title>
+    <!-- Linea de Bootstrap --------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Modulo2_Tarea_4/css/style.css">
+</head>
+
+<body>
+    <!-- Aca va la barra de navegacion ----------------------------->
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Iniciar SESIÓN</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ver mas...
+                </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Ver Menu</a></li>
+                                <li><a class="dropdown-item" href="#">Sugerencias</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Hacete fan</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Que queres comer...?" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Fin de la barra de navegacion ---------------------------->
+    <div class="container-fluid" style="background-color:grey; color: white; height: auto; padding: 15px; margin: 10px;">
+        <h1 style="text-align: center;">LA COMILONA PORTEÑA</h1>
+        <br>
+        <div class="container-fluid" style="height:auto ; width: auto; border: 1px black solid; text-align: center; padding-bottom: 5px  ;">
+            <p style="font-size: 30px ;"> <b> NOS DEDICAMOS A...</b>
+            </p>
+            <br>
+            <p>
+                <b style="color: black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde necessitatibus alias harum sunt aspernatur reprehenderit ab accusamus eligendi cum voluptatem, temporibus minima sequi voluptates tempore, numquam quia iste! Porro, totam!</b>
+            </p>
+        </div>
+    </div>
+    <!-- El Menu semanal ------------------------------------------->
+    <div class="container-fluid" style=" margin: 20px; padding: 20px; text-align: center;
+    background-color: rgb(136, 187, 255); height: autopx; width: auto;">
+        <div class="container">
+            <h3 style="padding-bottom: 10px;">MENU DE LOS DIAS</h3>
+        </div>
+        <div class="row" style="font-family: verdana; padding: 5px; margin: 5px; border: 2px solid black;">
+            <div class=" col ">
+                <b> Lunes </b>
+                <li>Pescados & Mariscos</li>
+                <img src="img/menu/lunes.jpg" alt="Menu de los Lunes" style="height: 60px ; border-radius: 5px; box-shadow: 2px 2px ;">
+            </div>
+            <div class="col ">
+                <b> Martes</b>
+                <li>Carne / Pollo</li>
+                <img src="img/menu/martes.jpg" alt="Menu de los Martes" style="height: 60px ; border-radius: 5px; box-shadow: 2px 2px ;">
+            </div>
+            <div class="col ">
+                <b>Miercoles</b>
+                <li>Milanesas</li>
+                <img src="img/menu/miercoles.jpg" alt="Menu de los Miercoles" style="height: 60px ; border-radius: 5px; box-shadow: 2px 2px ;">
+            </div>
+            <div class="col ">
+                <b>Jueves</b>
+                <li>Guisos</li>
+                <img src="img/menu/Jueves.jpg" alt="Menu de los Jueves" style="height: 60px ; border-radius: 5px; box-shadow: 2px 2px ;">
+            </div>
+            <div class="col ">
+                <b>Viernes</b>
+                <li>Pastas</li>
+                <img src="img/menu/Viernes.jpg" alt="Menu de los Viernes" style="height: 60px ; border-radius: 5px; box-shadow: 2px 2px ;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu de comidas agrupados  ------------------------------------->
+
+    <table class="table menu">
+        <thead>
+            <tr>
+                <th scope="col1">Dia</th>
+                <th scope="col1">Pescado & Mariscos</th>
+                <th scope="col2">Carne / Pollo</th>
+                <th scope="col3">Milanesas</th>
+                <th scope="col4">Guisos</th>
+                <th scope="col5">Pastas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Lunes</th>
+                <td>Tarta de pescado</td>
+                <td>Arroz con pollo</td>
+                <td>Carne, pollo o cerdo</td>
+                <td>Guiso de lentejas</td>
+                <td>Ravioles con salsa bologñesa</td>
+            </tr>
+            <tr>
+                <th scope="row">Martes</th>
+                <td>Salmón marinado</td>
+                <td>Palomita al vino blanco</td>
+                <td>Carne, pollo o cerdo</td>
+                <td>Guiso de lentejas vegano</td>
+                <td>Fideos tallarin con pesto</td>
+            </tr>
+            <tr>
+                <th scope="row">Miercoles</th>
+                <td>Carpaccio de vieiras a los cítricos</td>
+                <td>Pollo a la mostaza</td>
+                <td>Carne, pollo o cerdo</td>
+                <td>Guisos con fideos y pollo</td>
+                <td>Sorrentinos gigantes de J&Q</td>
+            </tr>
+            <tr>
+                <th scope="row">Jueves</th>
+                <td>Vieiras rellenas</td>
+                <td>Bife de chorizo marinado con vino tinto y chimichurri</td>
+                <td>Carne, pollo o cerdo</td>
+                <td>Guiso de lentejas con carne</td>
+                <td>Capelletinis caseros de 3 sabores</td>
+            </tr>
+            <tr>
+                <th scope="row">Viernes</th>
+                <td>Lomo de merluza gratinado al vermú</td>
+                <td>Ensalada Caesar con pollo</td>
+                <td>Carne, pollo o cerdo</td>
+                <td>Guiso de fideos moñito y salchicha parrillera</td>
+                <td>Fideos con salsa roquefort </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Aca empieza Accordion "delivery"----------------------->
+
+    <div class="accordion delivery" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Zona 1
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                    does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Zona 2
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as
+                    the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Zona 3
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                    does limit overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Aca termina Accordion "delivery"------------------- -->
+    <!-- Aca empieza Carousel-------------------- -->
+    <div class="container carousel">
+        <h4 class="carouselh4">¡Mira todas nuestras fotos!</h4>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Modulo2_Tarea_4/img/slide/slide_1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Menús bien elaborados...</h5>
+                        <p>Preparación casera</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Modulo2_Tarea_4/img/slide/slide_2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>La mejor calidad en tus comidas...</h5>
+                        <p>Para que disfrutes de una excelente alimentación</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Modulo2_Tarea_4/img/slide/slide_3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>¿Qué esperas para hacer tu pedido..?</h5>
+                        <p>Registrate y pedinos lo que quieras...¡cualquier dia es un buen dia!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Ver Anterior</span>
+                    </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Ver siguiente</span>
+                    </button>
+        </div>
+    </div>
+    </div>
+    <!-- Aca termina Carousel ---------------------- -->
+
+    <!-- Contacto ------------------------- -->
+
+    <div class="container">
+        <h3>Si tenes usuario, logueate aqui:</h3>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Correo electronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Aqui tu correo electronico">
+                <small id="emailHelp" class="form-text text-muted">Mantendremos la privacidad de tus datos</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Aqui tu Contraseña">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Mantener mi sesion activa</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>LA COMILONA PORTEÑA edicion 2005 - Design created by @ - </p>
+    </footer>
+
+
+    <!-- Bundle JS - Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+</body>
+
 </html>

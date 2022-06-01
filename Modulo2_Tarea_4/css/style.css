@@ -1,0 +1,61 @@
+/* Aca va el Body & img ---------------- */
+
+body {
+    padding: 1rem;
+}
+
+
+/* Menu de comidas --------------- */
+
+.menu {
+    background-color: darkgray;
+    position: center;
+    margin: auto;
+    height: auto;
+    width: 95%;
+    border: 2px solid black;
+    font-size: 13px;
+}
+
+tr {
+    text-align: center;
+}
+
+
+/* Accordion delivery ------------ */
+
+.delivery {
+    padding: 25px;
+    margin: auto;
+    width: 600px;
+}
+
+
+/* Carousel  ---------------------*/
+
+.carousel {
+    max-width: 650px;
+    justify-items: auto;
+    padding: 10px;
+}
+
+.carouselh4 {
+    text-decoration-color: black;
+    margin: 30px;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    height: 50px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+
+/* Footer ----------------------- */
+
+footer {
+    margin-top: 20px;
+    padding-top: 80px;
+    background-color: rgba(97, 97, 97, 0.701);
+    text-align: right;
+}
