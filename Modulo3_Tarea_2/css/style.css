@@ -1,0 +1,368 @@
+/* ---------------------------------PAGE INDEX ------------------------------------------------ */
+
+body {
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: beige;
+}
+
+
+/* ---------------------------------------------HEADER */
+
+header {
+    background-color: rgb(249, 167, 137);
+    padding: 16px 0;
+}
+
+header img {
+    background: fixed;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+}
+
+
+/* ---------------------------------------------NAV */
+
+nav {
+    background-color: rgba(255, 0, 51, 0.892);
+    margin-bottom: 20px;
+    border: rgb(255, 255, 255) 2px solid;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    transition: 0.3s;
+    background-color: rgb(255, 118, 118);
+    color: black;
+}
+
+nav ul li a.activo {
+    background-color: rgb(249, 167, 137);
+}
+
+
+/* --------------------------------------------MAIN */
+
+h2 {
+    color: black;
+    font-weight: 400;
+}
+
+h2 p {
+    color: rgb(102, 0, 0);
+}
+
+
+/* --------------------------------------------FOOTER */
+
+footer {
+    background-color: rgba(207, 207, 207, 0.892);
+    clear: both;
+    color: rgb(255, 90, 123);
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+    border-bottom: 3px solid black;
+    border-top: 2px solid black;
+}
+
+
+/* ---------------------------------------------ESTILOS SECCION HOME */
+
+.bienvenidos {
+    width: 60%;
+    box-sizing: border-box;
+    background-color: rgb(255, 207, 87);
+    border-radius: 20px;
+    text-align: left;
+    padding: 0px 10px 10px 20px;
+    border: rgb(0, 0, 0) 1px solid;
+}
+
+.testimonios {
+    width: 20%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.testimonios {
+    background-color: rgb(255, 207, 87);
+    padding: 16px;
+    border-radius: 20px;
+    border: rgb(0, 0, 0) 1px solid;
+}
+
+.testimonio .cita {
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    margin: 12px 0;
+}
+
+
+/* ----------------------------------------------PAGE NOSOTROS ---------------------------------------- */
+
+
+/* ---------------------------------------------HISTORIA */
+
+.historia {
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.historia p {
+    font-size: 16px;
+    padding-left: 5px;
+    background-color: coral;
+    border: white;
+    border-radius: 5px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+
+/*  --------------------------------------------STAFF */
+
+.staff {
+    padding-left: 15px;
+}
+
+.staff h2 {
+    font-size: 25px;
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona {
+    border: 1px solid black;
+}
+
+.persona img {
+    border-radius: 20%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.892);
+    margin: 10px;
+    border: 1px black solid;
+}
+
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: 200;
+    color: rgb(57, 54, 48);
+    letter-spacing: 2px;
+}
+
+.persona h5 {
+    font-size: 16px;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.persona h6 {
+    font-size: 11px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.persona p {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 5px;
+    background-color: coral;
+    border-radius: 10px;
+    margin: 4px;
+    letter-spacing: 2px;
+}
+
+
+/* -----------------------------------------PAGE SERVICIOS ------------------------------ */
+
+.servicio {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.servicio h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.servicio p {
+    letter-spacing: 2px;
+}
+
+.holder h2 {
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.servicio img {
+    max-width: 150px;
+}
+
+
+/* ---------------------------------------PAGE GALERIA ---------------------------------- */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.galeria img {
+    width: 18%;
+    border: 1px solid black;
+    padding: 0.3em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 15px;
+    box-shadow: 2px 2px black;
+}
+
+
+/* ---------------------------------------PAGE NOVEDADES ------------------------------------  */
+
+.novedades {
+    margin-left: 15px;
+    background-color: darksalmon;
+    padding: 5px 2px 10px 5px;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(255, 25, 117);
+    width: 85%;
+}
+
+.novedades h3,
+h4 {
+    letter-spacing: 5px;
+    color: black;
+    margin-left: 10px;
+}
+
+.novedades h3 {
+    font-size: 26px;
+}
+
+.novedades p {
+    background: rgba(255, 90, 123, 0.501);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+
+
+/* -----------------------------------------------PAGE CONTACTO ------------------------------------ */
+
+.contacto {
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos p {
+    font-size: 14px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p {
+    display: flex;
+    margin-left: 20px;
+}
+
+.formulario p label {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario input[type="submit"] {
+    background: chocolate;
+    box-shadow: 0 0 10px chocolate;
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.formulario p:hover {
+    transition: 0.5s;
+    color: rgb(252, 35, 35);
+}
+
+.formulario input:hover {
+    transition: 0.5s;
+    color: rgb(252, 35, 35);
+}

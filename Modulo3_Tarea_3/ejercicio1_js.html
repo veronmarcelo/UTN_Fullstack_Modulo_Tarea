@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        0 a 1000 metros = pie
+
+        1000 a 10000 metros = bicicleta
+
+        10000 a 30000 metros = colectivo
+
+        30000 a 100000 metros = auto
+
+        +100000 = avion
+                */
+        //variables
+        var distancia;
+        var pie = "Entonces iras a pie"
+        var bicicleta = "Entonces irás en bicicleta"
+        var colectivo = "Entonces irás en colectivo"
+        var auto = "Entonces irás en auto"
+        var avion = "Entonces irás en avion"
+            //prompt
+        distancia = prompt('Ingresa la distancia a recorrer', '');
+        if (distancia <= 1000) {
+            document.write(pie);
+        }
+        if (distancia > 1000 && distancia <= 10000) {
+            document.write(bicicleta);
+        }
+        if (distancia > 10000 && distancia <= 30000) {
+            document.write(colectivo);
+        }
+        if (distancia > 30000 && distancia <= 100000) {
+            document.write(auto);
+        }
+        if (distancia > 100000) {
+            document.write(avion);
+        }
+    </script>
+</body>
+
+</html>
