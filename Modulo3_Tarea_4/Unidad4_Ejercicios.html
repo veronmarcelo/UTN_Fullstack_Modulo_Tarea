@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Unidad4.css">
+    <title>Ejercicio Unidad 4</title>
+</head>
+<body>
+    <div class="contenedor">
+        <button class="boton" onclick="restablecer()">RESET</button>
+    </div>
+
+    <h2>Ejercicio 1: Cambio en DOM a través de evento click</h2>
+    <div class="contenedor">
+        <div class="caja azul borde" id="azul"></div>
+        <div class="caja rojo borde" id="rojo"></div>
+        <div class="caja verde borde" id="verde"></div>
+    </div>
+
+    <h2>Ejercicio 2: Contador de caracteres en TextArea</h2>
+    <div class="contenedor">
+        <div class="box">
+            <textarea rows="3" maxlength="400" id="mensaje"></textarea>
+            <div id="contador">0/400</div>
+        </div>
+    </div>
+
+    <h2>Ejercicio 3: Arrays encontrar Alumnos Aprobados</h2>
+    <div class="contenedor ejercicio3">
+        <div class="botonera">
+            <button class="boton" onclick="verAlumnos(alumnos)">Visualizar Alumnos</button>
+            <button class="boton" onclick="verAprobados()">Buscar Aprobados</button>
+        </div>
+        <div class="lista" id="pizarra"></div>
+    </div>
+
+    <script type="text/javascript">
+
+        function restablecer(){
+            changeBackground('aquamarine');
+            borrarTextArea();
+            clearPizzara();
+        }
+        
+        // EJERCICIO 1 Cambios en el DOM desde evento click **************************************************
+        //funcion para cambiar de color (recibe por paramentro el color para colorear el body).
+        function changeBackground(color) {
+            document.body.style.backgroundColor = color;
+        }
+        //selección de los elementos HTML para identificarlos y aplicarles cambios.
+        const azul = document.getElementById('azul');
+        const rojo = document.getElementById('rojo');
+        const verde = document.getElementById('verde');
+        //asignación de escucha de evento CLICK sobre cada elemento HTML seleccionado.
+        azul.addEventListener('click', function() {
+                changeBackground('blue');
+            }
+        );
+        rojo.addEventListener('click', function() {
+                changeBackground('red');
+            }
+        );
+        verde.addEventListener('click', function() {
+                changeBackground('green');
+            }
+        );
+        // EJERCICIO 1 ***************************************************************************************
+        
+
+        // EJERCICIO 2 Contador de caracteres en textarea ****************************************************
+        const mensaje = document.getElementById('mensaje');
+        const contador = document.getElementById('contador');
+
+        mensaje.addEventListener('input', function(e) {
+            const target = e.target;
+            const longitudMax = target.getAttribute('maxlength');
+            const longitudAct = target.value.length;
+            contador.innerHTML = `${longitudAct}/${longitudMax}`;
+        });
+
+        function borrarTextArea(){
+            document.getElementById("mensaje").value = "";
+            contador.innerHTML = "0/400"
+        }
+        // EJERCICIO 2 ****************************************************************************************
+
+
+        //EJERCICIO 3 Arrays - funciones de manejo de posiciones, encontrar los alumnos aprobados con 7 o mas.
+        const aprobados = []; //Array en blanco que contendra los alumnos aprobados.
+        //Array de Alumnos.
+        const alumnos = [
+            {"nombre": 'Juan Gomez', "nota": 7},
+            {"nombre": 'Pedro Rodriguez', "nota": 4},
+            {"nombre": 'Roxana García', "nota": 8},
+            {"nombre": 'Luciano Lopez', "nota": 5},
+            {"nombre": 'Fernanda Gimenez',"nota": 6},
+            {"nombre": 'Florencia Martinez', "nota": 10},
+            {"nombre": 'Raul Sanchez', "nota": 7},
+            {"nombre": 'Sandra Figueroa', "nota": 8}
+        ];
+
+        //Recorre un array dado y genera elementos de lista li dentro de un contenedor espesificado.
+        function verAlumnos(lista){
+            document.getElementById("pizarra").innerHTML = "";
+            var pizarra = document.getElementById("pizarra"); 
+            lista.forEach(function(data,index){
+                var linew = document.createElement("li");    
+                var contenido = document.createTextNode(data.nombre+' '+data.nota);
+                pizarra.appendChild(linew);
+                linew.appendChild(contenido);
+            });
+        }
+        
+        function verAprobados(){
+            buscarAprobados(alumnos);
+            verAlumnos(aprobados);
+            clearArray(aprobados);
+        }
+
+        //Recibe un array, lo recore y genera un nuevo array Aprobaods con los elementos >= 7 como noto.
+        function buscarAprobados(lista){
+            var foo = lista.map(function(bar){
+                if(bar.nota >= 7){
+                    aprobados.push(bar);
+                }
+            });
+        }
+        //Resetea pone ne blanco array dado.
+        function clearArray(lista){
+            lista.splice(0, lista.length);
+        }
+        //Resetea una seccion dada.
+        function clearPizzara(){
+            document.getElementById("pizarra").innerHTML = "";
+        }
+        // EJERCICIO 3 ****************************************************************************************
+
+    </script>
+
+</body>
+</html>
