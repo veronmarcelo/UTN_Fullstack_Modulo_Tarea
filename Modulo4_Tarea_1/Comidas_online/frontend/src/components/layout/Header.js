@@ -2,7 +2,12 @@ import React from 'react';
 
 const Header = (props) => {
     return (
-        <div>Header</div>
+        <header>
+        <div className="holder">
+            <img src="img/Logo.jpg" width="100" alt="Comidas On Line"/>
+            <h1>Comidas - ON LINE</h1>
+        </div>
+    </header>
     );
 }
 

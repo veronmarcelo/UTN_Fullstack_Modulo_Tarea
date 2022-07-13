@@ -2,7 +2,9 @@ import React from 'react';
 
 const Footer = (props) => {
     return (
-        <div>Footer</div>
+        <footer>
+        <p>Diseñado por Marcelo Verona - Todos los derechos reservados 2022</p>
+    </footer>
     );
 }
 
