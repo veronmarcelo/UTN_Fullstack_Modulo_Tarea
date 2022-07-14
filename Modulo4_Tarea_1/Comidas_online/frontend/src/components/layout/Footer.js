@@ -1,4 +1,4 @@
-import React from 'react';
+import '../../styles/pages/layout.css';
 
 const Footer = (props) => {
     return (
